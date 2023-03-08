@@ -59,7 +59,7 @@ Please execute the below command from either `terminal` or `Iterm`
 When we run the above command, it would prompt us to select from the displayed choice of list. 
 
 - Select `3` for now to execute the test(i.e, Press the numeric `3` on the keyboard to proceed further and press `enter` or `return` keyword).
-- Select the appropriate feature to execute the tests(i.e, Press `1` for now since the `cucumber-petStoreTest` used on the feature file is `petStoreTest`) and press `enter` or `return` keyword.
+- Select the appropriate feature to execute the tests(i.e, Press `1` for now since the `cucumber-assureTest` used on the feature file is `assureTest`) and press `enter` or `return` keyword.
 - It would show us the fully qualified command on the `terminal` followed by running the tests.
 
 Once the tests are run successfully, reports would be generated under `output` directory(i.e, `api-tests/output/`)
