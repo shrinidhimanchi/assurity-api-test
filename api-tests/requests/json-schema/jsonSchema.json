@@ -1,0 +1,202 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome3",
+    "definitions": {
+        "Welcome3": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "CategoryId": {
+                    "type": "integer"
+                },
+                "Name": {
+                    "type": "string"
+                },
+                "Path": {
+                    "type": "string"
+                },
+                "CanListAuctions": {
+                    "type": "boolean"
+                },
+                "CanListClassifieds": {
+                    "type": "boolean"
+                },
+                "CanRelist": {
+                    "type": "boolean"
+                },
+                "LegalNotice": {
+                    "type": "string"
+                },
+                "DefaultDuration": {
+                    "type": "integer"
+                },
+                "AllowedDurations": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    }
+                },
+                "Fees": {
+                    "$ref": "#/definitions/Fees"
+                },
+                "FreePhotoCount": {
+                    "type": "integer"
+                },
+                "MaximumPhotoCount": {
+                    "type": "integer"
+                },
+                "IsFreeToRelist": {
+                    "type": "boolean"
+                },
+                "Promotions": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Promotion"
+                    }
+                },
+                "EmbeddedContentOptions": {
+                    "type": "array",
+                    "items": {}
+                },
+                "MaximumTitleLength": {
+                    "type": "integer"
+                },
+                "AreaOfBusiness": {
+                    "type": "integer"
+                },
+                "DefaultRelistDuration": {
+                    "type": "integer"
+                },
+                "CanUseCounterOffers": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "AllowedDurations",
+                "AreaOfBusiness",
+                "CanListAuctions",
+                "CanListClassifieds",
+                "CanRelist",
+                "CanUseCounterOffers",
+                "CategoryId",
+                "DefaultDuration",
+                "DefaultRelistDuration",
+                "EmbeddedContentOptions",
+                "Fees",
+                "FreePhotoCount",
+                "IsFreeToRelist",
+                "LegalNotice",
+                "MaximumPhotoCount",
+                "MaximumTitleLength",
+                "Name",
+                "Path",
+                "Promotions"
+            ],
+            "title": "Welcome3"
+        },
+        "Fees": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Bundle": {
+                    "type": "number"
+                },
+                "EndDate": {
+                    "type": "number"
+                },
+                "Feature": {
+                    "type": "number"
+                },
+                "Gallery": {
+                    "type": "number"
+                },
+                "Listing": {
+                    "type": "number"
+                },
+                "Reserve": {
+                    "type": "number"
+                },
+                "Subtitle": {
+                    "type": "number"
+                },
+                "TenDays": {
+                    "type": "number"
+                },
+                "ListingFeeTiers": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/ListingFeeTier"
+                    }
+                },
+                "SecondCategory": {
+                    "type": "number"
+                }
+            },
+            "required": [
+                "Bundle",
+                "EndDate",
+                "Feature",
+                "Gallery",
+                "Listing",
+                "ListingFeeTiers",
+                "Reserve",
+                "SecondCategory",
+                "Subtitle",
+                "TenDays"
+            ],
+            "title": "Fees"
+        },
+        "ListingFeeTier": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "MinimumTierPrice": {
+                    "type": "integer"
+                },
+                "FixedFee": {
+                    "type": "number"
+                }
+            },
+            "required": [
+                "FixedFee",
+                "MinimumTierPrice"
+            ],
+            "title": "ListingFeeTier"
+        },
+        "Promotion": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Id": {
+                    "type": "integer"
+                },
+                "Name": {
+                    "type": "string"
+                },
+                "Description": {
+                    "type": "string"
+                },
+                "Price": {
+                    "type": "number"
+                },
+                "MinimumPhotoCount": {
+                    "type": "integer"
+                },
+                "OriginalPrice": {
+                    "type": "number"
+                },
+                "Recommended": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "Description",
+                "Id",
+                "MinimumPhotoCount",
+                "Name",
+                "Price"
+            ],
+            "title": "Promotion"
+        }
+    }
+}

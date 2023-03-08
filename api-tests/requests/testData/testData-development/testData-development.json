@@ -1,0 +1,38 @@
+[
+    {
+        "scenarioName": "Assurity Test - Validate Attribute Name Should Have Value Carbon credits",
+        "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json;charset=utf-8"
+        },
+        "queryParams": {
+            "catalogue": "false"
+        },
+        "testData": {
+        }
+    },
+    {
+        "scenarioName": "Assurity Test - Validate Attribute CanRelist Should Have Value true",
+        "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json;charset=utf-8"
+        },
+        "queryParams": {
+            "catalogue": "false"
+        },
+        "testData": {
+        }
+    },
+    {
+        "scenarioName": "Assurity Test - Validate Promotions Object Should Have Appropriate Description",
+        "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json;charset=utf-8"
+        },
+        "queryParams": {
+            "catalogue": "false"
+        },
+        "testData": {
+        }
+    }
+]
